@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --pink-color: #e26e70;
+}
+body {
+    background-image: linear-gradient( 45deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 50%, rgb(255, 204, 112) 100% );
+    height: 100vh;
+    display: flex;
+    font-family: "poppins", sans-serif;
+}
+.container {
+    margin: auto;
+}
+.modal-btn {
+    background-color: white;
+    padding: 20px 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    display: block;
+    transition: all linear 0.2s;
+    cursor: pointer;
+}
+.modal-btn:hover {
+    opacity: 0.8;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* display: none; */
+}
+.modal-form {
+    position: relative;
+    width: 450px;
+    background-color: white;
+    margin: 200px auto;
+    border-radius: 6px;
+    overflow: hidden;
+    animation: showModal linear 0.2s;
+}
+
+.modal-form__heading {
+    padding: 15px 15px;
+    font-size: 17px;
+    background-color: var(--pink-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-form__heading-text {
+    font-weight: 500;
+}
+.modal-form__name {
+    padding: 15px;
+    color: var(--pink-color);
+}
+
+.modal-form__description {
+    padding-left: 15px;
+}
+
+.modal-form__btn {
+    padding: 9px 18px;
+    border: none;
+    outline: none;
+    background-color: var(--pink-color);
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    float: right;
+    margin: 20px 15px 20px 0;
+    cursor: pointer;
+
+}
+.modal-form__heading-icon {
+    cursor: pointer;
+}
+.modal.hide {
+    display: none;
+}
+@keyframes showModal {
+    from {
+        top: -200px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
