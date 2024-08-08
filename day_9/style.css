@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+body {
+    font-family: "poppins", sans-serif;
+
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(./hot.png) no-repeat center / cover;
+}
+
+.weather-app {
+    background: url(./hot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    min-width: 350px;
+    height: 600px;
+}
+
+.search-location {
+    outline: none;
+    border: none;
+    font-size: 20px;
+
+    border-radius: 0 15px 0 15px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.search-location:focus {
+    background-color: white;
+    border-radius: 15px 0 15px 0;
+}
+.content {
+    color: white;
+    text-align: center;
+}
+.header-location {
+
+    font-size: 35px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.time {
+    font-size: 15px;
+    margin: 6px 0;
+}
+
+.temperature {
+    font-size: 65px;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    box-shadow: 2px 2px 0 2px rgba(0, 0, 0, 0.5);
+    margin: 20px 0 30px;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.short-desc {
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.more-desc {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.more-desc__item {
+    display: flex;
+    flex-direction: column;
+}
+.more-desc__item i {
+    margin-bottom: 15px;
+}
+
+.content.hide {
+    visibility: hidden;
+    opacity: 0;
+}
