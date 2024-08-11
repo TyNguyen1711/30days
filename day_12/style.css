@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+.container {
+    margin: 200px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.range {
+    width: 600px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.range--bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    background-image: linear-gradient(to right, #bb69cc, #246bac);
+}
+
+.range--bar span {
+    font-size: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

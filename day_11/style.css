@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+    --success-color:  rgb(0, 128, 0);
+    --error-color: rgb(255, 0, 0);
+    --warning-color: rgb(255, 165, 0);
+
+
+    --success-backgroud: rgba(0, 128, 0, 0.4);
+    --error-backgroud: rgba(255, 0, 0, 0.4);
+    --warning-backgroud: rgba(255, 165, 0, 0.4);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: "poppins", sans-serif;
+}
+.list-btn {
+    margin: auto;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn--success {
+    background-color: var(--success-color);
+}
+.btn--warning {
+    background-color: var(--warning-color);
+}
+.btn--error {
+    background-color: var(--error-color);
+}
+
+
+#toast {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+.toast {
+    padding: 20px 30px;
+  
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    border-left: 6px solid var(--success-color);   
+    animation: fadeIn linear 2s forwards;
+    margin-bottom: 10px;
+}
+.toast.toast--success {
+    background-color: var(--success-backgroud);
+    border-left-color: var(--success-color);
+}
+.toast.toast--warning {
+    background-color: var(--warning-backgroud);
+    border-left-color: var(--warning-color);
+}
+.toast.toast--error {
+    background-color: var(--error-backgroud);
+    border-left-color: var(--error-color);
+}
+.toast i {
+    padding-right: 15px;
+    font-size: 25px;
+}
+
+.toast span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: var(--success-color);
+    animation: test linear 4s forwards;
+    animation-delay: 2s;
+}
+.toast.toast--success span {
+    background-color: var(--success-color);
+}
+.toast.toast--warning span {
+    background-color: var(--warning-color);
+}
+.toast.toast--error span {
+    background-color: var(--error-color);
+}
+@keyframes test {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateX(100%);
+    }
+    25% {
+        transform: translateX(-10%);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+		transform: translateX(-10px);
+	}
+	40% {
+		transform: translateX(0%);
+	}
+	80% {
+		transform: translateX(-10%);
+	}
+	100% {
+		transform: translateX(120%);
+	}
+}

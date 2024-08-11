@@ -50,7 +50,7 @@ ul {
     list-style: none;
 }
 
-.todoList-item {
+li {
     border-top: 1px solid #e5e5e5;
     cursor: pointer;
     font-size: 22px;
@@ -58,12 +58,17 @@ ul {
     display: flex;
     justify-content: space-between;
 }
-.todoList-item:hover i {
+li:hover i {
     display: unset;
     opacity: 1;
 }
-.todoList-item i {
+li i {
     display: none;
     opacity: 0;
     color: #888;
+}
+
+li.complete span{
+    color: #888;
+    text-decoration: line-through;
 }
