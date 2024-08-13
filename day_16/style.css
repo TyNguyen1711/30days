@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    line-height: 20px;
+}
+ section {
+    height: 100vh;
+ }
+
+
+ #home {
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+ }
+
+ .home-title {
+    font-size: 50px;
+    margin-bottom: 15px;
+    padding: 20px 0;
+
+ }
+
+ .home-desc {
+    font-size: 20px;
+    width: 800px;
+ }
+
+ #about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+ .box {
+    background-color: #242628;
+    width: 500px;
+    margin: 0 20px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+ }
+
+ .box-title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+ }
+
+ .box-desc {
+    font-style: 18px;
+ }
+
+ #team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #017c2c 50%, #fff 50%);
+
+ }
+
+
+ .member {
+    width: 200px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #2e363a;
+ }
+
+
+ .member-name {
+    color:#017c2c;
+
+    
+ }
+
+
+ .member-desc {
+    margin-top: 20px;
+    font-size: 14px;
+ }
+
+ .left-to-right {
+    transform: translateX(-150%);
+ }
+
+ .left-to-right.start {
+    transform: translateX(0);
+    transition: all 0.7s ease-in-out;
+ }
+
+ .right-to-left {
+   transform: translateX(150%);
+ }
+
+ .right-to-left.start {
+   transform: translateX(0);
+   transition: all 0.7s ease-in-out;
+ }
+
+
+ .zoom {
+   transform: scale(0);
+ }
+
+ .zoom.start {
+   transition: all 0.7s ease-in-out;
+   transform: unset;
+ }
