@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+   
+}
+.apps {
+    height: 100%;
+    display: flex;
+    background-color: #dadada;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.container-img {
+    width: 500px;
+    height: 500px;
+    margin: 0 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    cursor: none;
+    
+}
+.zoomer {
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-size: 2000px 2000px;
+    pointer-events: none;
+   
+}
+.hide {
+    display: none;
+}

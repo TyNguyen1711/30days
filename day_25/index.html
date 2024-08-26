@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day_25</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="form-search">
+                <input type="password">
+                <div class="icon-eye">
+                    <i class="fa-solid fa-eye hide"></i>
+                    <i class="fa-solid fa-eye-slash"></i>
+                </div>
+               
+            </div>
+            <button class = "submit">Submit</button>
+
+        </form>
+
+        <div class="validator">
+            <div class="request lowerCase">
+                <i class="fa-solid fa-xmark false"></i>
+                <i class="fa-solid fa-check hide true"></i>
+                <span>Lower-case</span>
+            </div>
+
+            <div class="request upperCase">
+                <i class="fa-solid fa-xmark false"></i>
+                <i class="fa-solid fa-check hide true"></i>
+                <span>Upper-case</span>
+            </div>
+
+            <div class="request number">
+                <i class="fa-solid fa-xmark false"></i>
+                <i class="fa-solid fa-check hide true"></i>
+                <span>Number</span>
+            </div>
+
+            <div class="request specialSymbol">
+                <i class="fa-solid fa-xmark false"></i>
+                <i class="fa-solid fa-check hide true"></i>
+                <span>At least one special symbol</span>
+            </div>
+
+            <div class="request leastChar">
+                <i class="fa-solid fa-xmark false"></i>
+                <i class="fa-solid fa-check hide true"></i>
+                <span>At least 8 characters</span>
+            </div>
+        </div>
+    </div>
+
+    <script src = "app.js"></script>
+</body>
+</html>
